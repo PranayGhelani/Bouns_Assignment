@@ -1,0 +1,71 @@
+<% include partials/header.ejs %>
+<% include partials/main_nav.ejs %>
+<!DOCTYPE html>
+<html>
+<main>
+<style>
+body {
+ background-image: linear-gradient(to right, #e3f2fd, yellow);
+ }
+ title>PC Games</title>
+
+        .game {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .game img {
+            width: 100%;
+            height: auto;
+        }
+
+</style>
+</head>  <div class="jumbotran jumbotran-fluid">
+    <div class="container">
+      <h1 class="display-4"> Welcome to the <%= title %> page of Gamex</h1>
+    </div>
+  </div>
+</main>
+<% include partials/bottom_nav.ejs %>
+<% include partials/footer.ejs %>
+
+
+
+<head>
+    <title>PC Games</title>
+    <style>
+        .game {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .game img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <h2>Counter-Strike: Global Offensive</h2>
+        <img src="https://i.imgur.com/SsIAJWH.jpg" alt="CS:GO">
+        <p>CS:GO is a first-person shooter video game developed by Valve Corporation. It was released in August 2012 for Microsoft Windows, OS X, and Linux. It is a sequel to the original Counter-Strike game, which was first released in 1999.</p>
+    </div>
+
+    <div class="game">
+        <h2>League of Legends</h2>
+        <img src="https://i.pinimg.com/originals/6f/93/50/6f93508f78319faf2a9929632b3fc041.jpg" alt="League of Legends">
+        <p>League of Legends is a free-to-play team-based strategy video game developed and Year by Riot Games for Microsoft Windows and macOS. It was released in October 2009 as a beta version, and then as a full release in October 2011.</p>
+    </div>
+
+    <div class="game">
+        <h2>World of Warcraft</h2>
+        <img src="https://preview.redd.it/dragonflight-4k-wallpaper-v0-nihjzcd9lvu81.png?auto=webp&s=5b3a4667436cd139d5212cc9e9c3ca84389deb44" alt="World of Warcraft">
+        <p>World of Warcraft is a massively multiplayer online role-playing game (MMORPG) developed and Year by Blizzard Entertainment. It was released in November 2004, and since then, it has sold over 120 million subscriptions.</p>
+    </div>
+</body>
+</html>

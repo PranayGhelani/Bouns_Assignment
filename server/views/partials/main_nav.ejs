@@ -1,0 +1,69 @@
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">GAMEX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <% if(title == "Home") { %>
+              <a class="nav-link active" href="/home">
+            <% } else { %>
+              <a class="nav-link" href="/home">
+            <% } %>
+             <button type="button" class="btn btn-secondary">Home</button>
+          </li>
+          <li class="nav-item">
+            <% if(title == "About Us") { %>
+              <a class="nav-link active" href="/about">
+            <% } else { %>
+              <a class="nav-link" href="/about">
+            <% } %>
+              <button type="button" class="btn btn-primary">About</button>
+          </li>
+          <li class="nav-item">
+            <% if(title == "Products") { %>
+              <a class="nav-link active" href="/products">
+            <% } else { %> 
+                <a class="nav-link" href="/products">
+            <% } %>
+              <button type="button" class="btn btn-success">Products</button>
+
+          </li>
+          <li class="nav-item">
+            <% if(title == "Services") { %>
+              <a class="nav-link active" href="/services">
+            <% } else { %> 
+              <a class="nav-link" href="/services">
+            <% } %>
+              <button type="button" class="btn btn-warning">Services</button>
+          </li>
+          <li class="nav-item">
+            <% if(title == "Games List") { %>
+              <a class="nav-link active" href="/Gameslist">
+            <% } else { %> 
+              <a class="nav-link" href="/Gameslist">
+            <% } %>
+            <button type="button" class="btn btn-info">Games</button>
+          </li>
+          
+          <% if(typeof displayName == 'string' && displayName) { %>
+          <li class="navbar-text">
+            <i class="fas fa-lg fa-user"></i>
+            Welcome, <%= displayName %>
+          </li>
+          <li class="nav-item">
+              <a href="/logout" class="nav-link" >
+              <i class="fa-solid fa-sign-out-alt"></i> Logout</a>
+          </li>
+          <% } else { %>
+            <li class="nav-item">
+              <a href="/login" class="nav-link">
+              <i class="fa-solid fa-sign-in-alt"></i> Login</a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </nav>
